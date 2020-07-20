@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using Machine.Specifications;
 
 namespace Kata.Spec
@@ -16,6 +17,9 @@ namespace Kata.Spec
         It should_have_the_food_in_its_belly = () =>
             _systemUnderTest.Belly.Should().Contain("banana");
     }
+
+    
+ 
     
     // Given the user input is empty when calculating the sum then it should return zero.
     // Given the user input is one number when calculating the sum then it should return the same number. (example "3" should equal 3)

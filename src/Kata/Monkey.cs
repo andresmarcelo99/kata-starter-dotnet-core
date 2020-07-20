@@ -12,7 +12,7 @@ namespace Kata
 
         public IList<string> Belly { get; }
 
-        public void Eat(string food)
+        public void Eat(string food="")
         {
             Belly.Add(food);
         }
