@@ -12,7 +12,7 @@ namespace Kata
             }
 
             int sum = 0;
-            string[] numbers_str = numbers.Split(',');
+            string[] numbers_str = numbers.Split(new[]{",","\n"}, StringSplitOptions.None);
             foreach (var num in numbers_str)
             {
                 if (int.TryParse(num, out int num_int))
