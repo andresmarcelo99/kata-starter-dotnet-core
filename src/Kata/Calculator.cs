@@ -18,6 +18,10 @@ namespace Kata
             {
                 if (int.TryParse(num, out int num_int))
                 {
+                    if (num_int < 0)
+                    {
+                        throw new Exception($"negatives not allowed: {num_int}");
+                    }
                     sum += num_int;
                 }
             }
